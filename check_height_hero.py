@@ -2,12 +2,13 @@ import requests
 
 
 def convert(height: str) -> float:
+    """Конвертируем полученную строку в числовое значения, для дальнейшего нахождения максимума"""
     if 'cm' in height:
         return float(height.replace(' cm', ''))
     elif 'meters' in height:
         return float(height.replace(' meters', '')) * 100
     else:
-        return 0пше
+        return 0
 
 
 def check_height_hero(api_url: str, gender: str, has_job: bool) -> dict:
