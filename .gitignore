@@ -1,0 +1,5 @@
+# Игнорировать директорию __pycache__
+__pycache__/
+
+# Игнорировать директорию .pytest_cache
+.pytest_cache
